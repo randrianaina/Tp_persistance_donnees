@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('start',\App\Http\Livewire\Employes::class)->name('Start');
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/employes');
 });
 
 Route::get('/home', function () {
